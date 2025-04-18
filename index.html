@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naina Singh | Portfolio</title>
   <style>
-    :root { --primary:#212121; --accent:#ff9800; --light:#f5f5f5; }
+    :root {
+      --primary:#212121;
+      --accent:#ff9800;    /* kept for potential future use */
+      --pink:#ffb6c1;      /* light pink */
+      --light:#f5f5f5;
+    }
     *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
     body{background:#fff;color:#333;line-height:1.6}
     header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;z-index:10}
@@ -14,15 +19,18 @@
     nav a:hover{opacity:.7}
     section{padding:4rem 1rem;max-width:960px;margin:auto}
     h2{margin-bottom:1rem;color:var(--primary)}
-    .avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;margin:1rem 0;border:4px solid var(--accent)}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.7rem 1.4rem;border:none;border-radius:6px;text-decoration:none;font-weight:600;margin-top:1rem;transition:background .3s}
-    .btn:hover{background:#ffa733}
+    /* avatar border now light pink */
+    .avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;margin:1rem 0;border:4px solid var(--pink)}
+    /* buttons now light pink with darker hover */
+    .btn{display:inline-block;background:var(--pink);color:#fff;padding:.7rem 1.4rem;border:none;border-radius:6px;text-decoration:none;font-weight:600;margin-top:1rem;transition:background .3s}
+    .btn:hover{background:#ff9cb1}
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
     .card{background:var(--light);padding:1.5rem;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.05);display:flex;flex-direction:column;justify-content:space-between}
     .card h3{margin-bottom:.5rem}
     .project-link{margin-top:auto;align-self:start}
     footer{background:var(--primary);color:#fff;text-align:center;padding:1rem;margin-top:4rem}
-    .social a{color:#fff;margin:0 .5rem;font-size:1.2rem;text-decoration:none}
+    /* social links now black */
+    .social a{color:#000;margin:0 .5rem;font-size:1.2rem;text-decoration:none}
   </style>
 </head>
 <body>
@@ -61,7 +69,7 @@
       <div class="card">
         <h3>KHS Power BI Dashboard</h3>
         <p>Interactive dashboard built during my BI externship to visualize claims data from multiple sources.</p>
-        <a href="https://app.powerbi.com/groups/me/reports/f4f20ded-d204-491c-8e58-ba9c60c80025/8511bb7564ccb837c2c3?experience=power-bi" target="_blank" rel="noopener" class="btn project-link">View Dashboard</a>
+        <a href="https://app.powerbi.com/groups/me/reports/f4f20ded-d204-491c-8e58-ba9c60c80025?ctid=8a198873-4fec-4e76-8182-ca479edbbd60&pbi_source=linkShare" target="_blank" rel="noopener" class="btn project-link">View Dashboard</a>
       </div>
       <!-- NFA ➜ DFA Converter -->
       <div class="card">
@@ -87,3 +95,4 @@
   </footer>
 </body>
 </html>
+
