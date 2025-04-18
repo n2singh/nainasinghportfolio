@@ -1,28 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naina Singh | Portfolio</title>
   <style>
-    :root{--primary:#212121;--accent:#ff9800;--light:#f5f5f5}
-    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
-    body{background:#fff;color:#333;line-height:1.6}
-    header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;z-index:100}
-    nav a{color:#fff;text-decoration:none;margin-left:1.25rem;font-weight:600;transition:color .2s}
-    nav a:hover{color:var(--accent)}
-    section{padding:4rem 2rem;max-width:1000px;margin:auto}
-    h1,h2{margin-bottom:1rem}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:4px;text-decoration:none;font-weight:600;transition:opacity .2s}
-    .btn:hover{opacity:.85}
-    iframe{border:1px solid #ccc;border-radius:4px}
-    footer{background:var(--primary);color:#fff;text-align:center;padding:1.5rem 1rem;margin-top:4rem}
-    @media(max-width:600px){nav a{display:block;margin:0.5rem 0}}
+    :root {
+      --primary: #212121;
+      --accent: #ff9800;
+      --light: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* NAV */
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 4rem 10vw;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    /* ABOUT */
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESUME */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTACT */
+    .contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: var(--primary);
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div><strong>Naina Singh</strong></div>
+    <h1>Naina Singh</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
@@ -31,43 +147,86 @@
     </nav>
   </header>
 
-  <main>
-    <!-- About -->
-    <section id="about">
-      <h1>About Me</h1>
-      <p>I’m a third‑year Computer Science student at UC San Diego with a passion for turning data‑driven insights into elegant software. From business‑intelligence dashboards to full‑stack web apps, I enjoy building tools that make a measurable impact.</p>
-    </section>
+  <!-- ABOUT ME -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="nainasinghheadshot.jpg" alt="Naina Singh Headshot" class="avatar" />
+    <p>
+      Hi! I'm Naina, a third‑year Computer Science student at UC San Diego with a
+      passion for building data‑driven applications and user‑focused features.
+      From BI dashboards to full‑stack web apps, I love turning ideas into
+      elegant, scalable solutions.
+    </p>
+  </section>
 
-    <!-- Resume -->
-    <section id="resume">
-      <h2>Résumé</h2>
-      <p>
-        <a class="btn" href="Naina_Singh_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
-      </p>
-      <iframe src="Naina_Singh_Resume.pdf" width="100%" height="800px" loading="lazy"></iframe>
-    </section>
+  <!-- RESUME -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="Naina_Singh_Resume.pdf" download class="btn">Download PDF</a>
+    <iframe
+      src="Naina_Singh_Resume.pdf"
+      title="Naina Singh Resume PDF Viewer"
+    ></iframe>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>STritons</strong> – MERN‑stack fitness planner for UCSD students.</li>
-        <li><strong>NFA→DFA Converter</strong> – Java tool demonstrating decidability of regular languages.</li>
-        <li><strong>BI Dashboard</strong> – SQL + Power BI solution for Kern Health Systems upgrade project.</li>
-      </ul>
-    </section>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>STritons (MERN)</h3>
+        <p>
+          Fitness planning web app that lets UCSD students design workouts and
+          reserve gym equipment.
+        </p>
+        <a
+          href="https://github.com/n2singh/stritons"
+          target="_blank"
+          class="project-link"
+          >Code on GitHub</a
+        >
+      </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:naina2004ns@gmail.com">naina2004ns@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/n2singh" target="_blank" rel="noopener">github.com/n2singh</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/naina‑singh/" target="_blank" rel="noopener">/in/naina‑singh</a></p>
-    </section>
-  </main>
+      <div class="card">
+        <h3>BI Dashboard</h3>
+        <p>
+          Power BI dashboard built during Kern Health Systems externship to
+          unify multi‑source claims data.
+        </p>
+        <a
+          href="https://github.com/n2singh/bi-dashboard"
+          target="_blank"
+          class="project-link"
+          >Slides &amp; SQL</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>NFA → DFA Converter</h3>
+        <p>
+          Java program proving every regular language is decidable by
+          implementing the conversion.
+        </p>
+        <a
+          href="https://github.com/n2singh/CSE105Project"
+          target="_blank"
+          class="project-link"
+          >Repository</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:naina2004ns@gmail.com">naina2004ns@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/n2singh" target="_blank">@n2singh</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/nainasingh" target="_blank">LinkedIn Profile</a></p>
+  </section>
 
   <footer>
-    © 2025 Naina Singh. All rights reserved.
+    <small>&copy; 2025 Naina Singh. All rights reserved.</small>
   </footer>
 </body>
 </html>
