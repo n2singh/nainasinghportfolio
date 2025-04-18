@@ -2,32 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Naina Singh | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html {scroll-behavior:smooth;}
-    body {margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#ffffff;color:#333333;}
-    header {background:#212121;color:#ffffff;padding:1rem 2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;}
-    header h1 {margin:0;font-size:1.5rem;}
-    nav a {color:#ffffff;margin-right:1rem;text-decoration:none;font-weight:500;}
-    nav a:last-child {margin-right:0;}
-    nav a:hover {text-decoration:underline;}
-    section {padding:4rem 2rem;max-width:900px;margin:auto;}
-    h2 {margin-top:0;color:#212121;}
-    #projects .card {border:1px solid #e0e0e0;border-radius:8px;padding:1rem;margin-bottom:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,0.08);}    
-    #projects .card h3 {margin-top:0;}
-    a.button {display:inline-block;padding:.6rem 1.2rem;background:#212121;color:#ffffff;border-radius:4px;text-decoration:none;font-weight:600;transition:background 0.2s ease-in-out;}
-    a.button:hover {background:#424242;}
-    footer {background:#f5f5f5;text-align:center;padding:2rem 1rem;font-size:0.9rem;}
-    @media (max-width:600px) {
-      nav {width:100%;margin-top:1rem;display:flex;flex-wrap:wrap;}
-      nav a {flex:1 1 50%;margin-bottom:.5rem;}
-    }
+    :root{--primary:#212121;--accent:#ff9800;--light:#f5f5f5}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{background:#fff;color:#333;line-height:1.6}
+    header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;z-index:100}
+    nav a{color:#fff;text-decoration:none;margin-left:1.25rem;font-weight:600;transition:color .2s}
+    nav a:hover{color:var(--accent)}
+    section{padding:4rem 2rem;max-width:1000px;margin:auto}
+    h1,h2{margin-bottom:1rem}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:4px;text-decoration:none;font-weight:600;transition:opacity .2s}
+    .btn:hover{opacity:.85}
+    iframe{border:1px solid #ccc;border-radius:4px}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:1.5rem 1rem;margin-top:4rem}
+    @media(max-width:600px){nav a{display:block;margin:0.5rem 0}}
   </style>
 </head>
 <body>
   <header>
-    <h1>Naina Singh</h1>
+    <div><strong>Naina Singh</strong></div>
     <nav>
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
@@ -36,50 +31,43 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m <strong>Naina Singh</strong>, a third‑year Computer Science student at UC San Diego driven by a passion for full‑stack development, data visualization, and building technology that makes a positive impact. I thrive in collaborative environments where curiosity, creativity, and continuous learning are valued.</p>
-  </section>
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>I’m a third‑year Computer Science student at UC San Diego with a passion for turning data‑driven insights into elegant software. From business‑intelligence dashboards to full‑stack web apps, I enjoy building tools that make a measurable impact.</p>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can view or download my full résumé using the link below.</p>
-    <a class="button" href="Naina_Singh_Resume.pdf" target="_blank" rel="noopener">Download Résumé (PDF)</a>
-  </section>
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Résumé</h2>
+      <p>
+        <a class="btn" href="Naina_Singh_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </p>
+      <iframe src="Naina_Singh_Resume.pdf" width="100%" height="800px" loading="lazy"></iframe>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>STritons</strong> – MERN‑stack fitness planner for UCSD students.</li>
+        <li><strong>NFA→DFA Converter</strong> – Java tool demonstrating decidability of regular languages.</li>
+        <li><strong>BI Dashboard</strong> – SQL + Power BI solution for Kern Health Systems upgrade project.</li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <h3>STritons Fitness App</h3>
-      <p>A MERN‑stack web app that helps UCSD students plan workouts and track progress. I implemented authentication flows, React components, and CI/CD pipelines.</p>
-      <p><a href="https://tinyurl.com/STRITONS" target="_blank" rel="noopener">Live Demo</a></p>
-    </div>
-
-    <div class="card">
-      <h3>Business Intelligence Dashboard</h3>
-      <p>Designed SQL queries and Power BI visualizations to integrate claims data for Kern Health Systems, reducing manual reporting time by over 90%.</p>
-    </div>
-
-    <div class="card">
-      <h3>NFA → DFA Converter</h3>
-      <p>Java implementation that converts NFAs to DFAs, demonstrating theoretical CS principles. Includes JUnit tests ensuring correctness.</p>
-      <p><a href="https://github.com/n2singh/CSE105Project" target="_blank" rel="noopener">GitHub Repo</a></p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>I’m always open to new opportunities and collaborations. Feel free to reach out!</p>
-    <ul>
-      <li>Email: <a href="mailto:naina2004ns@gmail.com">naina2004ns@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/naina-singh" target="_blank" rel="noopener">linkedin.com/in/naina-singh</a></li>
-      <li>GitHub: <a href="https://github.com/n2singh" target="_blank" rel="noopener">github.com/n2singh</a></li>
-    </ul>
-  </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:naina2004ns@gmail.com">naina2004ns@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/n2singh" target="_blank" rel="noopener">github.com/n2singh</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/naina‑singh/" target="_blank" rel="noopener">/in/naina‑singh</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Naina Singh. All rights reserved.</p>
+    © 2025 Naina Singh. All rights reserved.
   </footer>
 </body>
 </html>
