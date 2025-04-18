@@ -5,31 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naina Singh | Portfolio</title>
   <style>
-    :root{
-      --primary:#212121;
-      --accent:#ff9800;
-      --light:#f5f5f5;
-    }
+    :root { --primary:#212121; --accent:#ff9800; --light:#f5f5f5; }
     *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
     body{background:#fff;color:#333;line-height:1.6}
-    header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;z-index:1000}
-    header h1{font-size:1.4rem;letter-spacing:.5px}
-    nav ul{display:flex;gap:1.5rem;list-style:none}
-    nav a{color:#fff;text-decoration:none;position:relative}
-    nav a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--accent);transition:.3s}
-    nav a:hover::after{width:100%}
-    section{padding:4rem 2rem;max-width:1000px;margin:auto}
-    .avatar{max-width:180px;border-radius:50%;margin:1.5rem 0;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.5rem;border-radius:4px;text-decoration:none;margin-top:1rem;transition:background .3s}
-    .btn:hover{background:#e08800}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-    .card{border:1px solid #ddd;border-radius:8px;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,.05);display:flex;flex-direction:column}
-    .card-content{padding:1rem;flex:1}
-    .card-footer{padding:1rem;background:var(--light);text-align:center}
-    .project-link{color:#fff;background:var(--primary);padding:.5rem 1rem;border-radius:4px;text-decoration:none;transition:background .3s}
-    .project-link:hover{background:#000}
-    footer{background:var(--primary);color:#fff;text-align:center;padding:2rem 1rem}
-    footer a{color:var(--accent);text-decoration:none;margin:0 .5rem}
+    header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;flex-wrap:wrap}
+    header h1{font-size:1.5rem;letter-spacing:1px}
+    nav ul{list-style:none;display:flex;gap:1.25rem}
+    nav a{color:#fff;text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    section{padding:4rem 1.5rem;max-width:1100px;margin:auto}
+    #about .avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 4px 10px rgba(0,0,0,.15);margin:1rem 0}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:.75rem 1.25rem;border-radius:4px;text-decoration:none;font-weight:600;margin-top:1rem}
+    .btn:hover{background:#ffb74d}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+    .card{background:var(--light);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:1.25rem 1rem}
+    .card h3{margin-bottom:.5rem}
+    .card p{font-size:.9rem}
+    .card a.project-link{display:inline-block;margin-top:.75rem;color:var(--accent);font-weight:600;text-decoration:none}
+    .card a.project-link:hover{text-decoration:underline}
+    #contact ul{list-style:none;display:flex;gap:1.5rem;flex-wrap:wrap}
+    #contact a{color:var(--primary);font-weight:600;text-decoration:none}
+    #contact a:hover{color:var(--accent)}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:1rem;}
+    footer a{color:var(--accent);text-decoration:none;font-weight:600}
+    footer a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
@@ -38,70 +37,57 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Résumé</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- About Me -->
   <section id="about">
     <h2>About Me</h2>
-    <img src="nainasinghheadshot.jpg" alt="Naina Singh" class="avatar">
-    <p>Hello! I’m Naina Singh, a third‑year Computer Science student at UC San Diego who loves turning ideas into code that helps people. From visualizing healthcare data to building full‑stack fitness apps, I thrive in collaborative environments where curiosity meets execution. Outside of coding, you’ll find me hiking California trails or experimenting with new recipes.</p>
+    <img src="nainasinghheadshot.jpg" alt="Naina Singh" class="avatar" />
+    <p>I’m a Computer Science student at UC San Diego with a passion for building full‑stack solutions that create real‑world impact. From data‑driven dashboards to fitness web apps, I love projects where code meets creativity and collaboration.</p>
   </section>
 
-  <!-- Projects -->
+  <section id="resume">
+    <h2>Résumé</h2>
+    <p>You can download my full résumé below:</p>
+    <a href="Naina_Singh_Resume.pdf" download class="btn">Download PDF</a>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
+    <div class="projects-grid">
       <div class="card">
-        <div class="card-content">
-          <h3>STritons</h3>
-          <p>MERN‑stack web app that guides UCSD students through custom workouts and gym planning.</p>
-        </div>
-        <div class="card-footer"><a class="project-link" href="https://tinyurl.com/STRITONS" target="_blank">Live / Code</a></div>
+        <h3>STritons Fitness Platform</h3>
+        <p>MERN‑stack web app that helps UCSD students plan and track workouts.</p>
+        <a href="https://tinyurl.com/STRITONS" class="project-link" target="_blank">Live / Code</a>
       </div>
-
       <div class="card">
-        <div class="card-content">
-          <h3>NFA → DFA Converter</h3>
-          <p>Java program (with JUnit tests) that demonstrates the theorem that every regular language is decidable.</p>
-        </div>
-        <div class="card-footer"><a class="project-link" href="https://github.com/n2singh/CSE105Project" target="_blank">Code on GitHub</a></div>
+        <h3>NFA → DFA Converter</h3>
+        <p>Java program demonstrating decidability by converting NFAs to DFAs with JUnit tests.</p>
+        <a href="https://github.com/n2singh/CSE105Project" class="project-link" target="_blank">Code</a>
       </div>
-
       <div class="card">
-        <div class="card-content">
-          <h3>BI Dashboard</h3>
-          <p>Power BI dashboard that unifies data from two claims systems, reducing manual report time 95%.</p>
-        </div>
-        <div class="card-footer"><a class="project-link" href="https://github.com/n2singh" target="_blank">Overview</a></div>
+        <h3>BI Dashboard @ Kern Health</h3>
+        <p>SQL + Power BI dashboard integrating claims data from two legacy systems.</p>
+        <a href="#" class="project-link" target="_blank">Demo Soon</a>
       </div>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section id="resume">
-    <h2>Résumé</h2>
-    <p>Download my résumé for a detailed look at my education, experience, and skills.</p>
-    <a href="Naina_Singh_Resume.pdf" download class="btn">Download PDF</a>
-  </section>
-
-  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let’s build something great together! Feel free to reach out via email or connect with me on social media.</p>
-    <p>Email: <a href="mailto:naina2004ns@gmail.com">naina2004ns@gmail.com</a></p>
+    <ul>
+      <li><a href="mailto:naina2004ns@gmail.com">Email</a></li>
+      <li><a href="https://github.com/n2singh" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/nainasingh0004/" target="_blank">LinkedIn</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>© 2025 Naina Singh</p>
-    <p>
-      <a href="https://github.com/n2singh" target="_blank">GitHub</a> •
-      <a href="https://www.linkedin.com/in/nainasingh0004/" target="_blank">LinkedIn</a>
-    </p>
+    © 2025 Naina Singh • <a href="https://www.linkedin.com/in/nainasingh0004/" target="_blank">LinkedIn</a>
   </footer>
 </body>
 </html>
