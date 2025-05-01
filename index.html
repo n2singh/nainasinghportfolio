@@ -1,104 +1,127 @@
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
-    <!-- STRitons -->
-    <div class="card">
-      <h3>STRitons Fitness Web App</h3>
-      <p>MERN-stack site that helps UCSD students plan workouts and connect to RIMAC gym resources.</p>
-      <a href="https://docs.google.com/presentation/d/1iqwashESNX4vQBqEDM9jUYjIFV4_UeoX_j7lsov-YoM/edit?usp=sharing"
-         target="_blank" rel="noopener" class="btn project-link">
-        Slide Deck
-      </a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naina Singh | Portfolio</title>
+  <style>
+    :root {
+      --primary:#212121;
+      --accent:#ff9800;    /* kept for potential future use */
+      --pink:#ffb6c1;      /* light pink */
+      --light:#f5f5f5;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{background:#fff;color:#333;line-height:1.6}
+    header{background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;z-index:10}
+    header h1{font-size:1.4rem}
+    nav a{color:#fff;text-decoration:none;margin-left:1rem;font-size:0.95rem;transition:opacity .3s}
+    nav a:hover{opacity:.7}
+    section{padding:4rem 1rem;max-width:960px;margin:auto}
+    h2{margin-bottom:1rem;color:var(--primary)}
+    /* avatar border now light pink */
+    .avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;margin:1rem 0;border:4px solid var(--pink)}
+    /* buttons now light pink with darker hover */
+    .btn{display:inline-block;background:var(--pink);color:#fff;padding:.7rem 1.4rem;border:none;border-radius:6px;text-decoration:none;font-weight:600;margin-top:1rem;transition:background .3s}
+    .btn:hover{background:#ff9cb1}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+    .card{background:var(--light);padding:1.5rem;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.05);display:flex;flex-direction:column;justify-content:space-between}
+    .card h3{margin-bottom:.5rem}
+    .project-link{margin-top:auto;align-self:start}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:1rem;margin-top:4rem}
+    /* social links now black */
+    .social a{color:#000;margin:0 .5rem;font-size:1.2rem;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Naina Singh</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Power BI Dashboard -->
-    <div class="card">
-      <h3>KHS Power BI Dashboard</h3>
-      <p>Interactive dashboard built during my BI externship to visualize claims data from multiple sources.</p>
-      <a href="https://app.powerbi.com/groups/me/reports/f4f20ded-d204-491c-8e58-ba9c60c80025?ctid=8a198873-4fec-4e76-8182-ca479edbbd60&pbi_source=linkShare"
-         target="_blank" rel="noopener" class="btn project-link">
-        View Dashboard
-      </a>
-    </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="nainasinghheadshot.jpg" alt="Naina Singh" class="avatar" />
+    <p>Hello! My name is Naina Singh and I am currently an undergraduate student at the University of California, San Diego. I am in the process of getting a BS in Computer Science, and I hope to broaden my knowledge of programming and expand my experience through opportunities in the world of engineering, technology, and software!</p>
+  </section>
 
-    <!-- NFA → DFA Converter -->
-    <div class="card">
-      <h3>NFA to DFA Converter</h3>
-      <p>Java program that converts a given NFA to an equivalent DFA, complete with JUnit tests.</p>
-      <a href="https://github.com/n2singh/CSE_105_Project"
-         target="_blank" rel="noopener" class="btn project-link">
-        GitHub Repo
-      </a>
-    </div>
+  <section id="resume">
+    <h2>Résumé</h2>
+    <p>Download my complete résumé as a PDF.</p>
+    <a href="Naina_Singh_Resume.pdf" class="btn" download>Download PDF</a>
+  </section>
 
-    <!-- Virtual Robot for a Natural Disaster -->
-    <div class="card">
-      <h3>Virtual Robot for a Natural Disaster</h3>
-      <p><em>Jun 2021 – Jul 2021, University of Southern California</em><br>
-         My team and I designed and programmed a virtual robot to navigate a natural or man-made disaster.  
-         We used light sensors, ultrasonic sensors, bumper switches, and light switches to guide our robot.</p>
-      <p><strong>Skills:</strong> Research · Computer Science · Robotics</p>
-      <a href="https://sites.google.com/view/groupateam1/week-1?authuser=0"
-         target="_blank" rel="noopener" class="btn project-link">
-        Website
-      </a>
-      <a href="https://docs.google.com/document/d/1jTnMZzsWUR1bqOd2W8LmYWom6zVvpNpYX6crNyzmqxw/edit?usp=sharing"
-         target="_blank" rel="noopener" class="btn project-link">
-        Research Paper
-      </a>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <!-- STRitons -->
+      <div class="card">
+        <h3>STRitons Fitness Web App</h3>
+        <p>MERN‑stack site that helps UCSD students plan workouts and connect to RIMAC gym resources.</p>
+        <a href="https://docs.google.com/presentation/d/1iqwashESNX4vQBqEDM9jUYjIFV4_UeoX_j7lsov-YoM/edit?usp=sharing" target="_blank" rel="noopener" class="btn project-link">Slide Deck</a>
+      </div>
+      <!-- Power BI Dashboard -->
+      <div class="card">
+        <h3>KHS Power BI Dashboard</h3>
+        <p>Interactive dashboard built during my BI externship to visualize claims data from multiple sources.</p>
+        <a href="https://app.powerbi.com/groups/me/reports/f4f20ded-d204-491c-8e58-ba9c60c80025?ctid=8a198873-4fec-4e76-8182-ca479edbbd60&pbi_source=linkShare" target="_blank" rel="noopener" class="btn project-link">View Dashboard</a>
+      </div>
+      <!-- NFA ➜ DFA Converter -->
+      <div class="card">
+        <h3>NFA to DFA Converter</h3>
+        <p>Java program that converts a given NFA to an equivalent DFA, complete with JUnit tests.</p>
+        <a href="https://github.com/n2singh/CSE_105_Project" target="_blank" rel="noopener" class="btn project-link">GitHub Repo</a>
+      </div>
+      <!-- Virtual Robot for a Natural Disaster -->
+      <div class="card">
+        <h3>Virtual Robot for a Natural Disaster</h3>
+        <p>Associated with University of Southern California. My team and I designed and programmed a virtual robot to navigate a natural or man‑made disaster using light sensors, ultrasonic sensors, bumper switches, and light switches.</p>
+        <a href="https://sites.google.com/view/groupateam1/week-1?authuser=0" target="_blank" rel="noopener" class="btn project-link">Website</a>
+        <a href="https://docs.google.com/document/d/1jTnMZzsWUR1bqOd2W8LmYWom6zVvpNpYX6crNyzmqxw/edit?usp=sharing" target="_blank" rel="noopener" class="btn project-link">Research Paper</a>
+      </div>
+      <!-- Bridge Design with Specifications -->
+      <div class="card">
+        <h3>Bridge Design with Specifications</h3>
+        <p>Associated with University of Southern California. Tasked with designing a 3D truss bridge in multiple modeling programs to meet weight, temperature, and cost criteria.</p>
+        <a href="https://sites.google.com/view/groupateam1/week-2?authuser=0" target="_blank" rel="noopener" class="btn project-link">Website</a>
+        <a href="https://docs.google.com/document/d/1yydrUPW-9WnHLjd_aNoaukcsW9YMZ0qCEN1xZD5tUlg/edit?usp=sharing" target="_blank" rel="noopener" class="btn project-link">Research Paper</a>
+      </div>
+      <!-- COVID‑19 Detector -->
+      <div class="card">
+        <h3>COVID‑19 Detector</h3>
+        <p>Associated with University of Southern California. Built the processing unit of an early‑warning device that monitors symptoms (dry cough, temperature, SpO₂) and alerts users via LEDs and alarm.</p>
+        <a href="https://sites.google.com/view/groupateam1/week-3?authuser=0" target="_blank" rel="noopener" class="btn project-link">Website</a>
+        <a href="https://docs.google.com/document/d/1It7AUf25eL5bHEZoBRQVfUBmko67kbOfSkSIwfz6mBM/edit?usp=sharing" target="_blank" rel="noopener" class="btn project-link">Research Paper</a>
+      </div>
+      <!-- Carbon Capturing Rocket -->
+      <div class="card">
+        <h3>Carbon Capturing Rocket</h3>
+        <p>Associated with University of Southern California. Designed and modeled a 3‑stage rocket capable of deploying a CO₂ capture device, optimizing for efficiency and payload.</p>
+        <a href="https://sites.google.com/view/groupateam1/week-4?authuser=0" target="_blank" rel="noopener" class="btn project-link">Website</a>
+        <a href="https://docs.google.com/document/d/1RF2T3j9ZTDz2LPHfUER8eTSxaa0fs6pPKdUfZLIajuk/edit?usp=sharing" target="_blank" rel="noopener" class="btn project-link">Research Paper</a>
+      </div>
     </div>
+  </section>
 
-    <!-- Bridge Design with Specifications -->
-    <div class="card">
-      <h3>Bridge Design with Specifications</h3>
-      <p><em>Jun 2021 – Jul 2021, University of Southern California</em><br>
-         Tasked with designing a 3D truss bridge in multiple modeling tools to meet weight, material,  
-         and cost criteria. Calculated load tolerances and optimized for price.</p>
-      <p><strong>Skills:</strong> ModelSmart3D · BridgeDesigner · Civil Engineering · TinkerCAD · Building Science</p>
-      <a href="https://sites.google.com/view/groupateam1/week-2?authuser=0"
-         target="_blank" rel="noopener" class="btn project-link">
-        Website
-      </a>
-      <a href="https://docs.google.com/document/d/1yydrUPW-9WnHLjd_aNoaukcsW9YMZ0qCEN1xZD5tUlg/edit?usp=sharing"
-         target="_blank" rel="noopener" class="btn project-link">
-        Research Paper
-      </a>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email or connect with me on social platforms.</p>
+    <div class="social">
+      <a href="mailto:naina2004ns@gmail.com" aria-label="Email">Email📧</a>
+      <a href="https://github.com/n2singh" target="_blank" rel="noopener" aria-label="GitHub">Github🐱</a>
+      <a href="https://www.linkedin.com/in/nainasingh0004/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn🔗</a>
     </div>
+  </section>
 
-    <!-- COVID-19 Detector -->
-    <div class="card">
-      <h3>COVID-19 Detector</h3>
-      <p><em>Jun 2021 – Jul 2021, University of Southern California</em><br>
-         Built an early-warning processing unit for vulnerable populations.  
-         Monitored cough, temperature, and oxygen levels; displayed status via LEDs and triggered alarms.</p>
-      <p><strong>Skills:</strong> Biomedical Engineering · Circuit Design · Electrical Engineering</p>
-      <a href="https://sites.google.com/view/groupateam1/week-3?authuser=0"
-         target="_blank" rel="noopener" class="btn project-link">
-        Website
-      </a>
-      <a href="https://docs.google.com/document/d/1It7AUf25eL5bHEZoBRQVfUBmko67kbOfSkSIwfz6mBM/edit?usp=sharing"
-         target="_blank" rel="noopener" class="btn project-link">
-        Research Paper
-      </a>
-    </div>
-
-    <!-- Carbon Capturing Rocket -->
-    <div class="card">
-      <h3>Carbon Capturing Rocket</h3>
-      <p><em>Jun 2021 – Jul 2021, University of Southern California</em><br>
-         Designed a 3-stage model rocket to deploy a CO₂ capture device.  
-         Used RockSim, TinkerCAD, and other tools to optimize aerodynamics and payload delivery.</p>
-      <p><strong>Skills:</strong> RockSim · Mechanical Engineering · Industrial Engineering · Aerospace Engineering · Chemical Engineering</p>
-      <a href="https://sites.google.com/view/groupateam1/week-4?authuser=0"
-         target="_blank" rel="noopener" class="btn project-link">
-        Website
-      </a>
-      <a href="https://docs.google.com/document/d/1RF2T3j9ZTDz2LPHfUER8eTSxaa0fs6pPKdUfZLIajuk/edit?usp=sharing"
-         target="_blank" rel="noopener" class="btn project-link">
-        Research Paper
-      </a>
-    </div>
-  </div>
-</section>
+  <footer>
+    © 2025 Naina Singh • Built with HTML & CSS
+  </footer>
+</body>
+</html>
 
 
